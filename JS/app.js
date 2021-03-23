@@ -7,13 +7,16 @@ let todoList = [
 
 ]
 
-let completedTodos = []
+let completedTodos = [];
 
 for(let i = 0; i < todoList.length; i++){
     if(todoList[i].status == "complete"){
-        completedTodos.push(todoList[i])
+        completedTodos.push(todoList[i]);
     }
 }
-
-
 console.log(completedTodos)
+
+for(let {todo} of completedTodos){
+    console.log(todo)
+}
+
